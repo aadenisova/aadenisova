@@ -1,3 +1,12 @@
+title: Aleksandra Denisova
+description: Some space to share my thoughts, projects, and poetry.
 theme: jekyll-theme-minimal
-title: Aleksandra Denisova's homepage
-description: Bookmark this to keep an eye on my project updates!
+
+# Навигация
+nav:
+  - title: "Home"
+    url: /
+  - title: "Poetry"
+    url: /poetry
+  - title: "Studying & Teaching"
+    url: /studying
