@@ -1,60 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap'); */
 
-body {
-  font-family: 'Merriweather', Georgia, serif;
-  color: #000; 
+:root {
+  --font: Courier, monospace;
+	--font-size-base: 0.95rem;
+	--font-size-small: calc(var(--font-size-base) / 1.25);
+	--space: calc(var(--space-scale) / 100 * 1rem);
+  --color-text: #333;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: 100%;
+	   -moz-text-size-adjust: 100%;
+	    -ms-text-size-adjust: 100%;
+	        text-size-adjust: 100%;
 }
 
-/* nav {
-  position: fixed;
-  top: 40px;
-  right: 40px;
-  padding: 20px;
-  z-index: 1000;
-} */
+/* Resets */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Classes */
+
+.view {
+  margin: 15px 0; /* Внешние отступы сверху и снизу */
+}
+
+html, body {
+  height: 100%;
+  overflow-y: auto;
+}
+/* Body */
+
+body {
+	font-family: var(--font);
+	font-size: calc(var(--font-size-base) * var(--font-scale) / 100);
+	font-weight: var(--font-weight);
+	line-height: calc(1.6 * var(--line-height-scale) / 100);
+	color: var(--color-text);
+	height: 100vh;
+	background-color: var(--color-background);
+	scroll-behavior: smooth;
+	transition: background-color var(--transition-time) ease;
+  height: auto; /* Автоматическая высота */
+  min-height: 100vh; /* Минимум на весь экран */
+  padding-top: 80px; /* Высота вашего header */
+  overflow-x: hidden;
+}
+
+header {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  min-height: calc(100vh - 80px); /* Высота минус header */
+}
 
 nav {
   position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
   padding: 0;
 }
 
 nav a {
-  margin-left: 1rem;
+  margin-top: 0px;
+  margin-left: 0rem;
   font-weight: 500;
   text-decoration: none;
   color: #000;
 }
-/* 
-av a {
-  color: #000 !important;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 5px 10px;
-  border-radius: 3px;
-} */
-
-header {
-  margin-top: 100px;
-  padding: 20px;
-}
 
 section {
+  margin-top: 100px;
+  padding: 20px;
+  font-weight: normal; /* или 400 */
+}
+
+section h1 {
+  font-weight: normal; /* или 400 */
+  margin-top: 20px;
+  padding: 0px;
+}
+
+section h2 {
+  font-weight: normal; /* или 400 */
   margin-top: 100px;
   padding: 20px;
 }
 
 body, h1, h2, h3, p, a, li {
   color: #000 !important;
-}
-
-header h1 a {
-  color: #000 !important;
-}
-
-header p {
-  color: #000 !important;
-}
-
-nav a:hover {
-  background: #000;
-  color: #fff !important;
+  font-weight: normal; 
 }

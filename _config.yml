@@ -1,6 +1,11 @@
-title: Aleksandra Denisova
+title: Sasha Denisova
 description: Some space to share my thoughts, projects, and poetry.
 theme: jekyll-theme-minimal
+logo: /assets/images/way.jpg
+
+github:
+  owner_url: https://github.com/aadenisova
+email: alexandraa.denisova@gmail.com
 
 # Навигация
 nav:
